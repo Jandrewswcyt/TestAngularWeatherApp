@@ -1,0 +1,66 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+ 
+* {
+    margin: 0; 
+    padding: 0;
+}
+         
+body {
+    font-family: Ubuntu, arial, verdana;
+}
+
+ 
+.weather_table{
+    list-style-type: none;
+    line-height: 150%; 
+    font-size: 12px; 
+    margin: 0 auto; 
+    width: 25%; 
+    max-width: 800px; 
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.weather_block{
+    width: 100%; 
+    color:white;  
+    float: left; 
+    list-style-type: none; 
+    transition: all 0.25s; 
+    position: relative; 
+    box-sizing: border-box;
+     
+    margin-bottom: 10px; 
+    border-bottom: 1px solid transparent; 
+}
+      
+.weather_table h4 {
+    text-transform: uppercase; 
+    text-align: center;
+    padding: 5px 0; 
+    background: #333; 
+    margin: -10px 0 1px 0;
+}
+
+.weather_block h3{
+    text-transform: uppercase; 
+    padding: 5px 0; 
+    background: #333; 
+    margin: -10px 0 1px 0;
+}
+
+.temperature {
+    display: table; 
+    background: #444; 
+    width: 100%; 
+    height: 70px; 
+    text-align: center;
+}
+
+@media only screen and (min-width : 768px){
+    .weather_table {width: 25%;}
+    .weather_table {border-right: 1px solid transparent; border-bottom: 0 none;}
+    .weather_table:last-child {border-right: 0 none;}
+     
+    .weather_table:hover {border: 0 none;}
+}

@@ -1,0 +1,16 @@
+<div class="container"  *ngFor="let weather of weatherObjs; let idx = index">
+  <ul class="weather_table">
+    <h2>{{dummyData?.cod}}</h2>
+    <li class="weather_block">
+      <h4 *ngIf="idx == 0" style="background:purple">{{weather?.city.name}}, {{weather?.city.country}}</h4>
+      <h4 *ngIf="idx == 1" style="background:orange">{{weather?.city.name}}, UK</h4>
+      <h4 *ngIf="idx == 2" style="background:lightblue">{{weather?.city.name}}, UK</h4>
+      <div class="temperature">
+        <h2>{{weather?.list[0].main.temp}}&#8451;</h2>
+        <span class="weatherDescription">
+          {{weather?.list[0].weather[0].description}}
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>
